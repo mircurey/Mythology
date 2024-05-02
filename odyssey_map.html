@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4048f5fea0304b68fcf1dc57412d174a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4048f5fea0304b68fcf1dc57412d174a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4048f5fea0304b68fcf1dc57412d174a = L.map(
+                "map_4048f5fea0304b68fcf1dc57412d174a",
+                {
+                    center: [37.9838, 23.7275],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c117f809d6fc9cc4148b9b5010a94748 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c117f809d6fc9cc4148b9b5010a94748.addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var marker_84268926e23a57b4479b100ba68aaae7 = L.marker(
+                [40.1536, 26.4062],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_84162d6be8913f53681ae199222e3d02 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66c38d7b3373269d1233f7b1f2c0b759 = $(`<div id="html_66c38d7b3373269d1233f7b1f2c0b759" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Troy</b><br>'Now I have left the light of day, and am not there to help, as on the plains of Troy when I was killing the best Trojans, to help the Greeks.' (Od. 11-498-501)<br>The beginning of the epic, Troy marks the start of Odysseus' journey. Odysseus spent 10 years fighting on the side of the Greeks, eventually becoming one of their greatest warriors.<br><br><b>Importance:</b> Highlights the harships and challenges faced byOdysseus before the story of The Odyssey starts. Serves as a reminder of the epics theme of nostos (homecoming).</div></div>`)[0];
+                popup_84162d6be8913f53681ae199222e3d02.setContent(html_66c38d7b3373269d1233f7b1f2c0b759);
+            
+        
+
+        marker_84268926e23a57b4479b100ba68aaae7.bindPopup(popup_84162d6be8913f53681ae199222e3d02)
+        ;
+
+        
+    
+    
+            var marker_68328742e24bc4630273268d704d93f9 = L.marker(
+                [40.1817, 26.2401],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_d66e32494fd8ad83ef49dd7b1152876d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e390b40932ab34da6dbbe0fb4925f6a2 = $(`<div id="html_e390b40932ab34da6dbbe0fb4925f6a2" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Land of the Cicones</b><br>'We reached the land of the Cicones, allied with Troy. We fought and sacked their city, killed the men, but as for all the wives and plunder, we took them, to divide them equally among us all.' (Od. 9.39-42)<br>AKA Ismarus. Odysseus and his men reach the Land of the Cicones, where they encounter a fierce battle and leave victorious. They ransack the city, kill the men, and enslave the women. While celebrating their victory, nearby Cicones retaliate and kill several of Odysseus' men.<br><br><b>Importance:</b> Marks one of the first encounters in Odysseus' journey, showcasing the challenges and consequences of his actions.</div></div>`)[0];
+                popup_d66e32494fd8ad83ef49dd7b1152876d.setContent(html_e390b40932ab34da6dbbe0fb4925f6a2);
+            
+        
+
+        marker_68328742e24bc4630273268d704d93f9.bindPopup(popup_d66e32494fd8ad83ef49dd7b1152876d)
+        ;
+
+        
+    
+    
+            var marker_14f2eabc74fc03d5d25830a95a203476 = L.marker(
+                [33.9223, 18.4241],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_5f8e80242ae3fd1c10c73a9f5adbbc52 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98a0be462ef3e9112ab983646498a18f = $(`<div id="html_98a0be462ef3e9112ab983646498a18f" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Land of the Lotus Eaters</b><br>'The scouts encountered humans, Lotus-Eaters, who did not hurt them. They just shared with them their sweet delicious fruit. But as they ate it, they lost the will to come back and bring news to me. They wanted only to stay there, feeding on lotus with the Lotus-Eaters. They had forgotten home. I dragged them back. in tears, forced them on board the hollow ships, pushed them below the decks, and tied them up.' Od. 9.91-99<br>Upon reaching the land of the Lotus Eaters, Odysseus' crew encounters an enticing land where the inhabitants consume a plant called the lotus. They sample the plant and succumb to its effects, losing all desire to return home. Despite Odysseus' efforts to retrieve them and continue their journey, the men refuse to leave. He orders them back onto their ships and ties them up.<br><br><b>Importance:</b> Highlights the dangers of temptation and the importance of perseverance in Odysseus' journey.</div></div>`)[0];
+                popup_5f8e80242ae3fd1c10c73a9f5adbbc52.setContent(html_98a0be462ef3e9112ab983646498a18f);
+            
+        
+
+        marker_14f2eabc74fc03d5d25830a95a203476.bindPopup(popup_5f8e80242ae3fd1c10c73a9f5adbbc52)
+        ;
+
+        
+    
+    
+            var marker_28e100ae1b79c100ed2407dd01003af1 = L.marker(
+                [37.0078, 25.2637],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_114aaafa19cc91e2b2e3b28a39ae2d9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_adef1c1872fdd0185135e8ee48bde4b7 = $(`<div id="html_adef1c1872fdd0185135e8ee48bde4b7" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Land of the Cyclopes</b><br>'We reached the land of the Cyclopes, a fierce, lawless people who never lift a hand to plant or plow but trust in the immortal gods.' (Od.9.105-107)<br>Odysseus and his men reached teh Land of the Cyclopes, home of the giant cyclops Polyphemus. They entered Polyphemus' cave, and were trapped as he began to eat some of Odysseus' crew. Odysseys blinded Polyphemus and escaped with his men by hiding under the giant's sheep. As they were leaving, Odysseus taunted Polyphemus, revealing his real name and incurring the wrath of the god Poseidon.<br><br><b>Importance:</b> This encounter showcases his intelligence, recoucefullness, and cunningness. It also marks the beginning of Posiedon's grudge against Odysseus.</div></div>`)[0];
+                popup_114aaafa19cc91e2b2e3b28a39ae2d9f.setContent(html_adef1c1872fdd0185135e8ee48bde4b7);
+            
+        
+
+        marker_28e100ae1b79c100ed2407dd01003af1.bindPopup(popup_114aaafa19cc91e2b2e3b28a39ae2d9f)
+        ;
+
+        
+    
+    
+            var marker_ef5a19350b1ef6c3cb7d841c28dab9b3 = L.marker(
+                [38.3983, 15.0895],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_8ddf2999819d766ce06301309562c90e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c711c7243e0f3b8962fe6d24d88b71b = $(`<div id="html_6c711c7243e0f3b8962fe6d24d88b71b" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Aeolia</b><br>'We reached the floating island of Aeolia, home of Aeolus, son of Hippotas, dear to the immortal gods.' (Od.10.1-3)<br>Odysseus and his men visited this island ruled by Aeolus, the god of winds, who gave them a bag of winds to help them return home. However, Odysseus' men opened the bag prematurely whilst he was sleeping, because they found it suspicious, causing them to be blown off course.<br><br><b>Importance:</b> This event represents a missed opportunity for a swift return home. It also highlights the theme of divine intervention and the consequences of human error in the face of temptation.</div></div>`)[0];
+                popup_8ddf2999819d766ce06301309562c90e.setContent(html_6c711c7243e0f3b8962fe6d24d88b71b);
+            
+        
+
+        marker_ef5a19350b1ef6c3cb7d841c28dab9b3.bindPopup(popup_8ddf2999819d766ce06301309562c90e)
+        ;
+
+        
+    
+    
+            var marker_fdd5561f6196e59400b482dc18208693 = L.marker(
+                [38.1167, 15.65],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_c97e8bf0bd51716faf4a696b3aa84ed2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ccbe0b04e53b91168a34af056dff7584 = $(`<div id="html_ccbe0b04e53b91168a34af056dff7584" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Laestrygonia</b><br>'Hearing, the mighty Laestrygonians thronged from all sides, not humanlike, but giants. With boulders bigger than a man could lift they pelted at us from the cliffs. We heard the dreadful uproar of ships being broken and dying men.' (Od. 10.119-124).<br>When Odysseus and his men arrived in the land of the Lestrygonians, they encountered giant cannibals who attacked and destroyed most of the ships in Odysseus' fleet. Odysseus and a few survivors managed to escape, but the encounter was a significant setback in their journey home.<br><br><b>Importance:</b> The encounter with the Laestrygonians results in significant losses for Odysseus' fleet, emphasizing the dangers of the journey.</div></div>`)[0];
+                popup_c97e8bf0bd51716faf4a696b3aa84ed2.setContent(html_ccbe0b04e53b91168a34af056dff7584);
+            
+        
+
+        marker_fdd5561f6196e59400b482dc18208693.bindPopup(popup_c97e8bf0bd51716faf4a696b3aa84ed2)
+        ;
+
+        
+    
+    
+            var marker_84a7c9f20c0fe029ad9c9e4858dff4c5 = L.marker(
+                [38.7331, 15.4144],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_96527f0dff7b13232a4fb10c00d416a0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c0bf9b5980565f826f6e3dd8f62666b = $(`<div id="html_7c0bf9b5980565f826f6e3dd8f62666b" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Land of the Sirens</b><br>'Next you will come to the Sirens who beguile all men that approach them. Whoever encounters them unawares and listens to their singing will never joy at reaching home.' (Od.12.39-41)<br>When Odysseus and his men approached the island of the Sirens, whose enchanting voices lured sailors to their deaths, he had his men plug their ears with wax so they would not be tempted. However, Odysseus himself wanted to hear their song, so he had his men tie him to the mast of the ship and instructed them not to untie him, no matter how much he begged.<br><br><b>Importance:</b> Highlights his cunning intellect and his ability to overcome temptation and resist allurements that could potentially jeopardize his journey home.</div></div>`)[0];
+                popup_96527f0dff7b13232a4fb10c00d416a0.setContent(html_7c0bf9b5980565f826f6e3dd8f62666b);
+            
+        
+
+        marker_84a7c9f20c0fe029ad9c9e4858dff4c5.bindPopup(popup_96527f0dff7b13232a4fb10c00d416a0)
+        ;
+
+        
+    
+    
+            var marker_9ccddd7054cf1cfff1d8d003c5b38520 = L.marker(
+                [38.1929, 15.3866],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_39deaa43ef5e78d27e02247fe70def82 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1c2008d54d92315fc94a8fc8bf0a4a97 = $(`<div id="html_1c2008d54d92315fc94a8fc8bf0a4a97" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Scylla and Charybdis</b><br>'Beneath, divine Charybdis sucks black water down. Three times a day she spurts it up; three times she glugs it down. Avoid that place when she is swallowing the water. No one could save you from death then, even great Poseidon. Row fast, and steer your ship alongside Scylla, since it is better if you lose six men than all of them.' (Od. 12.103-111)<br>As Odysseus and his men sailed between Scylla, a six-headed monster, and Charybdis, a deadly whirlpool, Scylla snatched six of his men, one for each of her heads. Although Odysseus was powerless to stop Scylla's attack, he managed to steer his ship away from Charybdis' deadly vortex, narrowly avoiding total destruction.<br><br><b>Importance:</b> Represents a moment of decision-making under extreme pressure. It showcases Odysseus' leadership and strategic thinking as he makes the difficult choice to minimize losses and continue his journey home.</div></div>`)[0];
+                popup_39deaa43ef5e78d27e02247fe70def82.setContent(html_1c2008d54d92315fc94a8fc8bf0a4a97);
+            
+        
+
+        marker_9ccddd7054cf1cfff1d8d003c5b38520.bindPopup(popup_39deaa43ef5e78d27e02247fe70def82)
+        ;
+
+        
+    
+    
+            var marker_0f5278340e9c569f3a582be8bc656119 = L.marker(
+                [38.3623, 20.7183],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_de2875db82980cb095ca2eb3dd8a337e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d699e160b8a4949e1e4ec8a0fa24445 = $(`<div id="html_0d699e160b8a4949e1e4ec8a0fa24445" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Ithaca</b><br>'The land was visible. Odysseus, after so long a wait and so much pain, was filled with happiness at last. In joy he kissed the fertile earth of his own country, then lifted high his arms and prayed' (Od. 13.352-356)<br> Ithaca is Odysseus' homeland and the ultimate destination of his long and arduous journey. After ten years of fighting in the Trojan War and another ten years of wandering, Odysseus finally returns to Ithaca. However, upon his return, he finds that his palace has been overrun by suitors vying for the hand of his wife, Penelope, and attempting to claim his kingdom. Disguised as a beggar, Odysseus spends time observing the situation in Ithaca and planning his revenge against the suitors.<br><br><b>Importance:</b> Ithaca is the long-awaited goal of Odysseus' journey, symbolizing homecoming and reunion with his family.</div></div>`)[0];
+                popup_de2875db82980cb095ca2eb3dd8a337e.setContent(html_0d699e160b8a4949e1e4ec8a0fa24445);
+            
+        
+
+        marker_0f5278340e9c569f3a582be8bc656119.bindPopup(popup_de2875db82980cb095ca2eb3dd8a337e)
+        ;
+
+        
+    
+    
+            var marker_515c3399b053116b4bf134f609caa501 = L.marker(
+                [38.3894, 14.9414],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_9d947b1d271d6e6765fe025d59213951 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f16cfe1c6f20cf0f635fc603aebe37dd = $(`<div id="html_f16cfe1c6f20cf0f635fc603aebe37dd" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Aeaea</b><br>'We reached Aeaea, home of the beautiful, dreadful goddess Circe, who speaks in human languages—the sister of Aeetes whose mind is set on ruin.' (Od. 10.135-138)<br>When Odysseus and his men arrived at Aeaea, they encountered the witch-goddess Circe, who turned some of his men into pigs. With the help of the god Hermes, Odysseus was able to resist Circe's magic and force her to restore his men to human form. Odysseus and his men then stayed on Aeaea for a year, enjoying the luxurious hospitality of Circe, before continuing on their journey home. When it was time to leave Aeaea, Circe told the men they needed to go to the Underworld before going back to Ithaca.<br><br><b>Importance:</b> The encounter with Circe and the transformation of his crew underscores the dangers of magic and temptation on Odysseus' journey.</div></div>`)[0];
+                popup_9d947b1d271d6e6765fe025d59213951.setContent(html_f16cfe1c6f20cf0f635fc603aebe37dd);
+            
+        
+
+        marker_515c3399b053116b4bf134f609caa501.bindPopup(popup_9d947b1d271d6e6765fe025d59213951)
+        ;
+
+        
+    
+    
+            var marker_96ea41dc0f87ea7de36dac0e4986d03f = L.marker(
+                [37.0179, 14.2915],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_7db445484560a521ee670767d3efb7dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d263d6bc2a249962f6dfc6b049d6b6a = $(`<div id="html_1d263d6bc2a249962f6dfc6b049d6b6a" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Thrinacia</b><br>'My friends, we have supplies on board. Let us not touch the cattle, or we will regret it. Those cows and fat sheep are the property of Helius, the great Sun God, who sees all things, and hears all things.' (Od. 12.320-324)<br>When Odysseus and his men arrived on the island of Thrinacia, they were warned not to harm the sacred cattle of the sun god Helios. However, Odysseus' men ignored the warning and killed and ate some of the cattle. As punishment, Zeus sent a thunderbolt that destroyed their ship, killing all of Odysseus' men except for him.<br><br><b>Importance:</b> Thrinacia is where Odysseus' crew succumbs to temptation, leading to dire consequences and further delays in their journey.</div></div>`)[0];
+                popup_7db445484560a521ee670767d3efb7dd.setContent(html_1d263d6bc2a249962f6dfc6b049d6b6a);
+            
+        
+
+        marker_96ea41dc0f87ea7de36dac0e4986d03f.bindPopup(popup_7db445484560a521ee670767d3efb7dd)
+        ;
+
+        
+    
+    
+            var marker_952307b8a7fefaddb4bcc90526d7d845 = L.marker(
+                [34.9734, 25.9543],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_b000388d59be3552e5bedf3e91074b57 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_128ba86d48309e80b7e979622d847d99 = $(`<div id="html_128ba86d48309e80b7e979622d847d99" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Ogygia</b><br>'On the tenth black night, the gods carried me till I reached Ogygia, home of the beautiful and mighty goddess Calypso. Lovingly she cared for me, vowing to set me free from death and time forever. But she never swayed my heart. I stayed for seven years; she gave me clothes like those of gods, but they were always wet with tears.' (Od. 7.253-261).<br>Where Odysseus is held captive by the nymph Calypso for seven years. Calypso offered Odysseus immortality and eternal youth if he stayed with her, but he longed to return to his wife and kingdom. He escapes with the help of the god Hermes.<br><br><b>Importance:</b> Ogygia represents a significant obstacle to Odysseus' journey, delaying his return home and testing his resilience and loyalty.</div></div>`)[0];
+                popup_b000388d59be3552e5bedf3e91074b57.setContent(html_128ba86d48309e80b7e979622d847d99);
+            
+        
+
+        marker_952307b8a7fefaddb4bcc90526d7d845.bindPopup(popup_b000388d59be3552e5bedf3e91074b57)
+        ;
+
+        
+    
+    
+            var marker_f9d98481677ed009d4d1c3266e358f5d = L.marker(
+                [37.3148, 20.5903],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+        var popup_92b35bee9cb45cf8afd1609fc851ac58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96f3ffee7306148183d2b87dc4144017 = $(`<div id="html_96f3ffee7306148183d2b87dc4144017" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 200px;'><b>Phaeacia</b><br>'Now, Odysseus, since you have been my guest, beneath my roof, you need not wander anymore. You have endured enough; you will get home again.' (Od. 13.3-6)<br>When Odysseus arrived in Phaeacia, he was welcomed by the princess Nausicaa, who showed him hospitality and kindness. The king of Phaeacia, Alcinous, offered to help Odysseus return home by providing him with a ship and crew. Odysseus recounted his epic journey and adventures to the Phaeacians, who were enthralled by his stories and sent him off to Ithaca, his home.<br><br><b>Importance:</b> Phaeacia serves as a pivotal point in Odysseus' journey, where he recounts his adventures and receives aid to finally return home.</div></div>`)[0];
+                popup_92b35bee9cb45cf8afd1609fc851ac58.setContent(html_96f3ffee7306148183d2b87dc4144017);
+            
+        
+
+        marker_f9d98481677ed009d4d1c3266e358f5d.bindPopup(popup_92b35bee9cb45cf8afd1609fc851ac58)
+        ;
+
+        
+    
+    
+            var marker_df38eb46848b70ad599c6a08b1b53f79 = L.marker(
+                [40.1536, 26.4062],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_da533f4a8368745494983512853a17bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df38eb46848b70ad599c6a08b1b53f79.setIcon(icon_da533f4a8368745494983512853a17bd);
+        
+    
+        var popup_79a2b35f29e01a7874b726a8ff8b58f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e585bd814a92e43e008bca6e178b581d = $(`<div id="html_e585bd814a92e43e008bca6e178b581d" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Troy</b><br>'Now I have left the light of day, and am not there to help, as on the plains of Troy when I was killing the best Trojans, to help the Greeks.' (Od. 11-498-501)<br>The beginning of the epic, Troy marks the start of Odysseus' journey. Odysseus spent 10 years fighting on the side of the Greeks, eventually becoming one of their greatest warriors.<br><br><b>Importance:</b> Highlights the harships and challenges faced byOdysseus before the story of The Odyssey starts. Serves as a reminder of the epics theme of nostos (homecoming).</div></div>`)[0];
+                popup_79a2b35f29e01a7874b726a8ff8b58f6.setContent(html_e585bd814a92e43e008bca6e178b581d);
+            
+        
+
+        marker_df38eb46848b70ad599c6a08b1b53f79.bindPopup(popup_79a2b35f29e01a7874b726a8ff8b58f6)
+        ;
+
+        
+    
+    
+            var marker_2ee3327b46389d422d7ab2bcc839f837 = L.marker(
+                [40.1817, 26.2401],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_9aad7b040a51df307f39f2f21b811717 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2ee3327b46389d422d7ab2bcc839f837.setIcon(icon_9aad7b040a51df307f39f2f21b811717);
+        
+    
+        var popup_6b723c25c0f2b9f653c76459afa51271 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_635e45fe642aa1c4a7bffcc3e13d77ec = $(`<div id="html_635e45fe642aa1c4a7bffcc3e13d77ec" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Land of the Cicones</b><br>'We reached the land of the Cicones, allied with Troy. We fought and sacked their city, killed the men, but as for all the wives and plunder, we took them, to divide them equally among us all.' (Od. 9.39-42)<br>AKA Ismarus. Odysseus and his men reach the Land of the Cicones, where they encounter a fierce battle and leave victorious. They ransack the city, kill the men, and enslave the women. While celebrating their victory, nearby Cicones retaliate and kill several of Odysseus' men.<br><br><b>Importance:</b> Marks one of the first encounters in Odysseus' journey, showcasing the challenges and consequences of his actions.</div></div>`)[0];
+                popup_6b723c25c0f2b9f653c76459afa51271.setContent(html_635e45fe642aa1c4a7bffcc3e13d77ec);
+            
+        
+
+        marker_2ee3327b46389d422d7ab2bcc839f837.bindPopup(popup_6b723c25c0f2b9f653c76459afa51271)
+        ;
+
+        
+    
+    
+            var marker_37e30871fd092e138d1d723a6ec210c1 = L.marker(
+                [33.9223, 18.4241],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_18308f9be68cd5c52251a67b19e53c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_37e30871fd092e138d1d723a6ec210c1.setIcon(icon_18308f9be68cd5c52251a67b19e53c5d);
+        
+    
+        var popup_ae5c5db312159496f500baae58e637b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_963349966b4386e119ecc4afc4f5e587 = $(`<div id="html_963349966b4386e119ecc4afc4f5e587" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Land of the Lotus Eaters</b><br>'The scouts encountered humans, Lotus-Eaters, who did not hurt them. They just shared with them their sweet delicious fruit. But as they ate it, they lost the will to come back and bring news to me. They wanted only to stay there, feeding on lotus with the Lotus-Eaters. They had forgotten home. I dragged them back. in tears, forced them on board the hollow ships, pushed them below the decks, and tied them up.' Od. 9.91-99<br>Upon reaching the land of the Lotus Eaters, Odysseus' crew encounters an enticing land where the inhabitants consume a plant called the lotus. They sample the plant and succumb to its effects, losing all desire to return home. Despite Odysseus' efforts to retrieve them and continue their journey, the men refuse to leave. He orders them back onto their ships and ties them up.<br><br><b>Importance:</b> Highlights the dangers of temptation and the importance of perseverance in Odysseus' journey.</div></div>`)[0];
+                popup_ae5c5db312159496f500baae58e637b6.setContent(html_963349966b4386e119ecc4afc4f5e587);
+            
+        
+
+        marker_37e30871fd092e138d1d723a6ec210c1.bindPopup(popup_ae5c5db312159496f500baae58e637b6)
+        ;
+
+        
+    
+    
+            var marker_6bbcfacebbde95c47e81bf5088d2cbdd = L.marker(
+                [37.0078, 25.2637],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_a042157bcf9a274136125317c883b233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bbcfacebbde95c47e81bf5088d2cbdd.setIcon(icon_a042157bcf9a274136125317c883b233);
+        
+    
+        var popup_e394b61dfe492e1a4166bd356310efe9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a1467a0c9817856fa3e88d80f149293 = $(`<div id="html_9a1467a0c9817856fa3e88d80f149293" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Land of the Cyclopes</b><br>'We reached the land of the Cyclopes, a fierce, lawless people who never lift a hand to plant or plow but trust in the immortal gods.' (Od.9.105-107)<br>Odysseus and his men reached teh Land of the Cyclopes, home of the giant cyclops Polyphemus. They entered Polyphemus' cave, and were trapped as he began to eat some of Odysseus' crew. Odysseys blinded Polyphemus and escaped with his men by hiding under the giant's sheep. As they were leaving, Odysseus taunted Polyphemus, revealing his real name and incurring the wrath of the god Poseidon.<br><br><b>Importance:</b> This encounter showcases his intelligence, recoucefullness, and cunningness. It also marks the beginning of Posiedon's grudge against Odysseus.</div></div>`)[0];
+                popup_e394b61dfe492e1a4166bd356310efe9.setContent(html_9a1467a0c9817856fa3e88d80f149293);
+            
+        
+
+        marker_6bbcfacebbde95c47e81bf5088d2cbdd.bindPopup(popup_e394b61dfe492e1a4166bd356310efe9)
+        ;
+
+        
+    
+    
+            var marker_494e7a1fd4049994b712a6dbec5f83ef = L.marker(
+                [38.3983, 15.0895],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_7c8342bc7697779c7803fa4735b76f47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_494e7a1fd4049994b712a6dbec5f83ef.setIcon(icon_7c8342bc7697779c7803fa4735b76f47);
+        
+    
+        var popup_1bf78ca9fb9993ec0700a86e0c975c17 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be38500df334e189ba9686477ac51549 = $(`<div id="html_be38500df334e189ba9686477ac51549" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Aeolia</b><br>'We reached the floating island of Aeolia, home of Aeolus, son of Hippotas, dear to the immortal gods.' (Od.10.1-3)<br>Odysseus and his men visited this island ruled by Aeolus, the god of winds, who gave them a bag of winds to help them return home. However, Odysseus' men opened the bag prematurely whilst he was sleeping, because they found it suspicious, causing them to be blown off course.<br><br><b>Importance:</b> This event represents a missed opportunity for a swift return home. It also highlights the theme of divine intervention and the consequences of human error in the face of temptation.</div></div>`)[0];
+                popup_1bf78ca9fb9993ec0700a86e0c975c17.setContent(html_be38500df334e189ba9686477ac51549);
+            
+        
+
+        marker_494e7a1fd4049994b712a6dbec5f83ef.bindPopup(popup_1bf78ca9fb9993ec0700a86e0c975c17)
+        ;
+
+        
+    
+    
+            var marker_d37b831c336f650187700b456777736d = L.marker(
+                [38.1167, 15.65],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_a82ea8b44473c242fc057515b650b949 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d37b831c336f650187700b456777736d.setIcon(icon_a82ea8b44473c242fc057515b650b949);
+        
+    
+        var popup_af6fc97b2b09f947d587e3656d9c109c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_919662f997771164b85ede0b41ae25b0 = $(`<div id="html_919662f997771164b85ede0b41ae25b0" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Laestrygonia</b><br>'Hearing, the mighty Laestrygonians thronged from all sides, not humanlike, but giants. With boulders bigger than a man could lift they pelted at us from the cliffs. We heard the dreadful uproar of ships being broken and dying men.' (Od. 10.119-124).<br>When Odysseus and his men arrived in the land of the Lestrygonians, they encountered giant cannibals who attacked and destroyed most of the ships in Odysseus' fleet. Odysseus and a few survivors managed to escape, but the encounter was a significant setback in their journey home.<br><br><b>Importance:</b> The encounter with the Laestrygonians results in significant losses for Odysseus' fleet, emphasizing the dangers of the journey.</div></div>`)[0];
+                popup_af6fc97b2b09f947d587e3656d9c109c.setContent(html_919662f997771164b85ede0b41ae25b0);
+            
+        
+
+        marker_d37b831c336f650187700b456777736d.bindPopup(popup_af6fc97b2b09f947d587e3656d9c109c)
+        ;
+
+        
+    
+    
+            var marker_71855bd8e13525db23011a70c0c082b7 = L.marker(
+                [38.7331, 15.4144],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_7de44f873f2fb0933ffd187f7175806d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_71855bd8e13525db23011a70c0c082b7.setIcon(icon_7de44f873f2fb0933ffd187f7175806d);
+        
+    
+        var popup_4175fff3704683da5647d5a90c0888f3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f722e2f8bd9160f428adf055580f8178 = $(`<div id="html_f722e2f8bd9160f428adf055580f8178" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Land of the Sirens</b><br>'Next you will come to the Sirens who beguile all men that approach them. Whoever encounters them unawares and listens to their singing will never joy at reaching home.' (Od.12.39-41)<br>When Odysseus and his men approached the island of the Sirens, whose enchanting voices lured sailors to their deaths, he had his men plug their ears with wax so they would not be tempted. However, Odysseus himself wanted to hear their song, so he had his men tie him to the mast of the ship and instructed them not to untie him, no matter how much he begged.<br><br><b>Importance:</b> Highlights his cunning intellect and his ability to overcome temptation and resist allurements that could potentially jeopardize his journey home.</div></div>`)[0];
+                popup_4175fff3704683da5647d5a90c0888f3.setContent(html_f722e2f8bd9160f428adf055580f8178);
+            
+        
+
+        marker_71855bd8e13525db23011a70c0c082b7.bindPopup(popup_4175fff3704683da5647d5a90c0888f3)
+        ;
+
+        
+    
+    
+            var marker_e0c8a0454329784f24dcf2537303eaf4 = L.marker(
+                [38.1929, 15.3866],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_c3b8d552ad4eec7ee94aa1f7749becd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e0c8a0454329784f24dcf2537303eaf4.setIcon(icon_c3b8d552ad4eec7ee94aa1f7749becd0);
+        
+    
+        var popup_1c77aedfd7ac37f5c45d3f8332b80989 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f69f6155c9885586c3c9a33ef4bb509 = $(`<div id="html_1f69f6155c9885586c3c9a33ef4bb509" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Scylla and Charybdis</b><br>'Beneath, divine Charybdis sucks black water down. Three times a day she spurts it up; three times she glugs it down. Avoid that place when she is swallowing the water. No one could save you from death then, even great Poseidon. Row fast, and steer your ship alongside Scylla, since it is better if you lose six men than all of them.' (Od. 12.103-111)<br>As Odysseus and his men sailed between Scylla, a six-headed monster, and Charybdis, a deadly whirlpool, Scylla snatched six of his men, one for each of her heads. Although Odysseus was powerless to stop Scylla's attack, he managed to steer his ship away from Charybdis' deadly vortex, narrowly avoiding total destruction.<br><br><b>Importance:</b> Represents a moment of decision-making under extreme pressure. It showcases Odysseus' leadership and strategic thinking as he makes the difficult choice to minimize losses and continue his journey home.</div></div>`)[0];
+                popup_1c77aedfd7ac37f5c45d3f8332b80989.setContent(html_1f69f6155c9885586c3c9a33ef4bb509);
+            
+        
+
+        marker_e0c8a0454329784f24dcf2537303eaf4.bindPopup(popup_1c77aedfd7ac37f5c45d3f8332b80989)
+        ;
+
+        
+    
+    
+            var marker_146dee7091f2b96086109859c324c6ec = L.marker(
+                [38.3623, 20.7183],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_9643df285ea7a7290540d67460a6e046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_146dee7091f2b96086109859c324c6ec.setIcon(icon_9643df285ea7a7290540d67460a6e046);
+        
+    
+        var popup_0ff2271230a48bbc38f4bedfe6f058a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_edc576b393c567c58aa597f9b4c42db4 = $(`<div id="html_edc576b393c567c58aa597f9b4c42db4" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Ithaca</b><br>'The land was visible. Odysseus, after so long a wait and so much pain, was filled with happiness at last. In joy he kissed the fertile earth of his own country, then lifted high his arms and prayed' (Od. 13.352-356)<br> Ithaca is Odysseus' homeland and the ultimate destination of his long and arduous journey. After ten years of fighting in the Trojan War and another ten years of wandering, Odysseus finally returns to Ithaca. However, upon his return, he finds that his palace has been overrun by suitors vying for the hand of his wife, Penelope, and attempting to claim his kingdom. Disguised as a beggar, Odysseus spends time observing the situation in Ithaca and planning his revenge against the suitors.<br><br><b>Importance:</b> Ithaca is the long-awaited goal of Odysseus' journey, symbolizing homecoming and reunion with his family.</div></div>`)[0];
+                popup_0ff2271230a48bbc38f4bedfe6f058a7.setContent(html_edc576b393c567c58aa597f9b4c42db4);
+            
+        
+
+        marker_146dee7091f2b96086109859c324c6ec.bindPopup(popup_0ff2271230a48bbc38f4bedfe6f058a7)
+        ;
+
+        
+    
+    
+            var marker_f9993256b6641a793b288b6f5888f9fe = L.marker(
+                [38.3894, 14.9414],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_ea6d2b1a97495d93039f51393e76b29a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f9993256b6641a793b288b6f5888f9fe.setIcon(icon_ea6d2b1a97495d93039f51393e76b29a);
+        
+    
+        var popup_245a7daccf7bfac64750e31b41d2a99a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e85750ab8b5545c9453b99dc67bfbf8e = $(`<div id="html_e85750ab8b5545c9453b99dc67bfbf8e" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Aeaea</b><br>'We reached Aeaea, home of the beautiful, dreadful goddess Circe, who speaks in human languages—the sister of Aeetes whose mind is set on ruin.' (Od. 10.135-138)<br>When Odysseus and his men arrived at Aeaea, they encountered the witch-goddess Circe, who turned some of his men into pigs. With the help of the god Hermes, Odysseus was able to resist Circe's magic and force her to restore his men to human form. Odysseus and his men then stayed on Aeaea for a year, enjoying the luxurious hospitality of Circe, before continuing on their journey home. When it was time to leave Aeaea, Circe told the men they needed to go to the Underworld before going back to Ithaca.<br><br><b>Importance:</b> The encounter with Circe and the transformation of his crew underscores the dangers of magic and temptation on Odysseus' journey.</div></div>`)[0];
+                popup_245a7daccf7bfac64750e31b41d2a99a.setContent(html_e85750ab8b5545c9453b99dc67bfbf8e);
+            
+        
+
+        marker_f9993256b6641a793b288b6f5888f9fe.bindPopup(popup_245a7daccf7bfac64750e31b41d2a99a)
+        ;
+
+        
+    
+    
+            var marker_44dc8cb4d1df1c41368d4a2942089547 = L.marker(
+                [37.0179, 14.2915],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_a78adc9f9e4a90615cde3278a08c05a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44dc8cb4d1df1c41368d4a2942089547.setIcon(icon_a78adc9f9e4a90615cde3278a08c05a9);
+        
+    
+        var popup_8519f4c6e67e15655b737b5886365ca7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f258efa090b5f599f51f071e5413c65a = $(`<div id="html_f258efa090b5f599f51f071e5413c65a" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Thrinacia</b><br>'My friends, we have supplies on board. Let us not touch the cattle, or we will regret it. Those cows and fat sheep are the property of Helius, the great Sun God, who sees all things, and hears all things.' (Od. 12.320-324)<br>When Odysseus and his men arrived on the island of Thrinacia, they were warned not to harm the sacred cattle of the sun god Helios. However, Odysseus' men ignored the warning and killed and ate some of the cattle. As punishment, Zeus sent a thunderbolt that destroyed their ship, killing all of Odysseus' men except for him.<br><br><b>Importance:</b> Thrinacia is where Odysseus' crew succumbs to temptation, leading to dire consequences and further delays in their journey.</div></div>`)[0];
+                popup_8519f4c6e67e15655b737b5886365ca7.setContent(html_f258efa090b5f599f51f071e5413c65a);
+            
+        
+
+        marker_44dc8cb4d1df1c41368d4a2942089547.bindPopup(popup_8519f4c6e67e15655b737b5886365ca7)
+        ;
+
+        
+    
+    
+            var marker_a2b66ef5561d548b8921802566942de2 = L.marker(
+                [34.9734, 25.9543],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_b7bfe8588065919d769f1ffa11c6ef08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a2b66ef5561d548b8921802566942de2.setIcon(icon_b7bfe8588065919d769f1ffa11c6ef08);
+        
+    
+        var popup_11c784e7e52dd14c7e20831d2060c503 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8ac278bf92e13a04e38810fa9ed8108 = $(`<div id="html_e8ac278bf92e13a04e38810fa9ed8108" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Ogygia</b><br>'On the tenth black night, the gods carried me till I reached Ogygia, home of the beautiful and mighty goddess Calypso. Lovingly she cared for me, vowing to set me free from death and time forever. But she never swayed my heart. I stayed for seven years; she gave me clothes like those of gods, but they were always wet with tears.' (Od. 7.253-261).<br>Where Odysseus is held captive by the nymph Calypso for seven years. Calypso offered Odysseus immortality and eternal youth if he stayed with her, but he longed to return to his wife and kingdom. He escapes with the help of the god Hermes.<br><br><b>Importance:</b> Ogygia represents a significant obstacle to Odysseus' journey, delaying his return home and testing his resilience and loyalty.</div></div>`)[0];
+                popup_11c784e7e52dd14c7e20831d2060c503.setContent(html_e8ac278bf92e13a04e38810fa9ed8108);
+            
+        
+
+        marker_a2b66ef5561d548b8921802566942de2.bindPopup(popup_11c784e7e52dd14c7e20831d2060c503)
+        ;
+
+        
+    
+    
+            var marker_1a03bf19079f9ac6b189a687755fc3dd = L.marker(
+                [37.3148, 20.5903],
+                {}
+            ).addTo(map_4048f5fea0304b68fcf1dc57412d174a);
+        
+    
+            var icon_d42448be3c575fa9696678953c8cba3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1a03bf19079f9ac6b189a687755fc3dd.setIcon(icon_d42448be3c575fa9696678953c8cba3d);
+        
+    
+        var popup_951753f274ee7d17d0d57872b5ba1077 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3aa7155072e4f385c81860f73bd2cfb3 = $(`<div id="html_3aa7155072e4f385c81860f73bd2cfb3" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; height: 300px;'><b>Phaeacia</b><br>'Now, Odysseus, since you have been my guest, beneath my roof, you need not wander anymore. You have endured enough; you will get home again.' (Od. 13.3-6)<br>When Odysseus arrived in Phaeacia, he was welcomed by the princess Nausicaa, who showed him hospitality and kindness. The king of Phaeacia, Alcinous, offered to help Odysseus return home by providing him with a ship and crew. Odysseus recounted his epic journey and adventures to the Phaeacians, who were enthralled by his stories and sent him off to Ithaca, his home.<br><br><b>Importance:</b> Phaeacia serves as a pivotal point in Odysseus' journey, where he recounts his adventures and receives aid to finally return home.</div></div>`)[0];
+                popup_951753f274ee7d17d0d57872b5ba1077.setContent(html_3aa7155072e4f385c81860f73bd2cfb3);
+            
+        
+
+        marker_1a03bf19079f9ac6b189a687755fc3dd.bindPopup(popup_951753f274ee7d17d0d57872b5ba1077)
+        ;
+
+        
+    
+</script>
+</html>
